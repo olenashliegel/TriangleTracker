@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Triangle Tracker</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
+</head>
+
+<body>
+  <h1>Triangle Tracker</h1>
+  <form>
+    <div class="container">
+      <label for="side1">Enter length for side1 for a Triangle </label>
+      <input name="side1" id="side1" type="number"> <br>
+      <p id="side1Error" class="hidden red error-message">Field value should be greater than 0</p>
+    </div>
+    <div class="container">
+      <label for="side2">Enter length for side2 for a Triangle </label>
+      <input name="side2" id="side2" type="number"> <br>
+      <p id="side2Error" class="hidden red error-message">Field value should be greater than 0</p>
+    </div>
+    <div class="container">
+      <label for="side3">Enter length for side3 for a Triangle </label>
+      <input name="side3" id="side3" type="number"> <br>
+      <p id="side3Error" class="hidden red error-message">Field value should be greater than 0</p>
+    </div>
+    <button type="submit" id="submitButton">Check triangle</button>
+    <button class="hidden" type="button" id="clearResultButton">Reset</button>
+  </form>
+  <div id="resultDiv" class="hidden">
+    <p id="result" class="red">result</p>
+  </div>
+</body>
+
+</html>
